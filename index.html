@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/blackpink.css">
+    <title>BEULINKEU</title>
+    <link rel="shortcut icon" type="image" href="../assets/1x/logo.png">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html" class="brand">BEULINKEU</a>
+            <div class="menu-btn"></div>
+            <div class="navbar">
+                <div class="nav-items">
+                    <a class="item" href="index.html">Home</a>
+                    <a class="item" href="group.html">BLACKPINK</a>
+                    <a class="item" href="#">members</a>
+                    <a class="item" href="#">COMMUNITY</a>
+                    <a class="join" href="join.html">Join us</a>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just <br>a Kpop group<br>It's <span> BLACKPINK </span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. </p>
+                <a href="group.html">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="rose.png"
+                    alt="https://kpopping.com/kpics/BLACKPINK-Rose-for-ELLE-Korea-Magazine-June-2021-Issue"
+                    class="members">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="jisoo2.png"
+                    alt="https://kowiki.net/blackpink-jisoo-flaunts-her-loveliness-for-harpers-bazaar-magazine/"
+                    onclick="imgSlider('jisoo2.png'); changeCircleColor('#D291BC')"></li>
+            <li><img src="jennie.png" alt="https://blackpinkofficial.tumblr.com/image/643514310858063873"
+                    onclick="imgSlider('jennie.png'); changeCircleColor('#52575D')"></li>
+            <li><img src="rose.png"
+                    alt="https://kpopping.com/kpics/BLACKPINK-Rose-for-ELLE-Korea-Magazine-June-2021-Issue"
+                    onclick="imgSlider('rose.png'); changeCircleColor('#ff9f9f')"></li>
+            <li><img src="lisa2.png"
+                    alt="https://www.allkpop.com/article/2021/04/lisas-harpers-bazaar-magazine-pictorials-were-removed-from-chinese-social-media-because-blackpink-models-for-adidas"
+                    onclick="imgSlider('lisa2.png'); changeCircleColor('#FFFF33')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="../assets/facebook.png" alt="footer" height="40px"></a></li>
+            <li><a href="#"><img src="../assets/twitter.png" alt="footer" height="40px"></a></li>
+            <li><a href="#"><img src="../assets/instagram.png" alt="footer" height="40px"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+        const navbar = document.querySelector(".navbar");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navbar.classList.toggle("active");
+        });
+
+        function imgSlider(anything) {
+            document.querySelector('.members').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+    <footer>
+        <div class="left">
+            <h1>Credit</h1>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/najmunnahar"
+                    title="NajmunNahar">NajmunNahar</a> from <a href="https://www.flaticon.com/"
+                    title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+        <div class="right">
+            <h1>Designed by</h1>
+            <div class="name">Nguyen Hien An</div>
+            <div><span>Contact:</span> +8412 3456 789</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

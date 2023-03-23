@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tenor+Sans&family=Zen+Antique&display=swap');
+
+@font-face {
+    font-family: "GeosansLight";
+    src: url(../fonts/GeosansLight.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Cinzel', serif;
+}
+
+/* Navigation Bar */
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    transition: 0.5s ease;
+    background-color: rgba(255, 159, 159, 1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+header .brand {
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navbar {
+    position: relative;
+}
+
+header .navbar .nav-items .item {
+    position: relative;
+    color: #000;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+header .navbar .nav-items .item:before {
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navbar .nav-items .item:hover:before {
+    width: 100%;
+}
+
+header .navbar .nav-items .join {
+    display: inline-block;
+    padding: 5px 20px;
+    background: #fff;
+    color: #000;
+    border: 3px solid #fff;
+    border-radius: 40px;
+    font-weight: 800;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+header .navbar .nav-items .join:hover {
+    background: #ff9f9f;
+    color: #fff
+}
+
+/* Navigation Bar */
+
+/* Profile */
+.profile {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+
+.profile .contentBox {
+    background: #000;
+    color: #fff;
+    padding: 100px;
+    width: 50%;
+}
+
+.heading {
+    text-transform: uppercase;
+    font-family: Lora, serif;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p,
+p strong {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6rem;
+}
+
+strong {
+    font-weight: 700 !important;
+}
+
+.profile .imgBox {
+    background: url(../assets/1x/pic1-100.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.banner img {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    z-index: 1;
+}
+
+.banner .content {
+    z-index: 900;
+    color: #fff;
+    position: relative;
+    max-width: 750px;
+    text-align: left;
+    padding-right: 20px;
+    transform: translateY(50px);
+}
+
+
+.banner .content h3,
+.banner .content h1,
+.banner .content h5 {
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: GeosansLight, 'Tenor Sans';
+    line-height: 5rem;
+}
+
+.banner .content h1 {
+    font-size: 9rem;
+}
+
+.banner .content h3 {
+    font-size: 3rem;
+}
+
+.banner .content h5 {
+    font-size: 1.5rem;
+}
+
+/* Profile */
+
+/* Debut */
+.debut {
+    background: #ff7f7f;
+    color: #000;
+    padding: 100px;
+    text-align: center;
+}
+
+.debut .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.debut .container .songs img {
+    height: 400px;
+    width: auto;
+    margin: 0 70px 0 70px;
+}
+
+.debut .container .songs {
+    z-index: 100;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.debut .text {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Debut */
+
+/* Achievement */
+.achievement {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achievement .contentBox {
+    max-width: 500px;
+}
+
+.achievement .contentBox .heading {
+    text-transform: none;
+    font-weight: 500;
+}
+
+.achievement .videoDel {
+    max-height: 350px;
+}
+
+.achievement .videoDel video {
+    z-index: 900;
+    max-height: 100%;
+    margin-left: 20px;
+}
+
+.video {
+    display: none;
+}
+
+/* Achievement */
+
+/* Social Icon Setting */
+.sci {
+    z-index: 999;
+    background: #ff7f7f;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    width: 45px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+/* Social Icon Setting */
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #ff9f9f;
+    padding: 50px;
+    color: #000;
+}
+
+footer h1 {
+    margin-bottom: 20px;
+}
+
+footer div {
+    font-family: Raleway, sans-serif;
+    line-height: 1.7em;
+}
+
+footer div span,
+footer .name {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+
+footer div a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer .right {
+    text-align: right;
+}
+
+@media (max-width: 1425px) {
+    .debut .container {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .debut .container .songs img {
+        margin: 20px 70px 20px 70px;
+    }
+}
+
+@media (max-width: 1340px) {
+    .achievement {
+        flex-direction: column;
+        padding-top: 50px;
+        margin-top: -50px;
+        padding-bottom: 60px;
+        justify-content: center;
+    }
+
+    .achievement .contentBox {
+        text-align: center;
+    }
+
+    .achievement .videoDel video {
+        display: none;
+    }
+
+    .video {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+        overflow: hidden;
+    }
+
+    .video .videoBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        background: #000;
+    }
+
+    .video .videoBox video {
+        min-width: 1150px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1190px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile .contentBox {
+        padding: 50px 200px 50px;
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .profile .imgBox {
+        width: 100%;
+        padding: 50px;
+        min-height: 800px;
+        text-align: center;
+    }
+
+    .video {
+        height: 70vh;
+    }
+
+    .video .videoBox video {
+        min-width: 1000px;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    /* Responsive Navigation Bar */
+    header {
+        padding: 12px 20px;
+    }
+
+    header .navbar {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 0, 0.5);
+    }
+
+    header .navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+    }
+
+    header .navbar.active {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 0, 0.5);
+    }
+
+    header .navbar .nav-items a {
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+
+    }
+
+    header .navbar .nav-items a:before {
+        background: #222;
+        height: 3px;
+    }
+
+    header .navbar .nav-items {
+        background: #F29492;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+
+    .menu-btn {
+        background: url(../assets/1x/menu1.png) no-repeat;
+        /*custom*/
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .menu-btn.active {
+        z-index: 999;
+        background: url(../assets/1x/close1.png) no-repeat;
+        /*custom*/
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+
+    /* Responsive Navigation Bar */
+
+    .debut {
+        padding: 50px;
+    }
+
+    .video {
+        height: 60vh;
+    }
+
+    .video .videoBox video {
+        min-width: 900px;
+    }
+}
+
+@media (max-width: 925px) {
+    .debut .container .songs .delete {
+        display: none;
+    }
+
+    .achievement {
+        margin-top: 0;
+        padding-top: 50px;
+    }
+
+    .video {
+        height: 55vh;
+
+    }
+
+    .video .videoBox video {
+        min-width: 800px;
+    }
+}
+
+
+/* Responsive Footer */
+@media (max-width: 850px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer .right {
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    footer h1 {
+        font-size: 1.3em;
+        margin-bottom: 5px;
+    }
+
+    footer div,
+    footer div span {
+        font-size: 0.9rem;
+    }
+
+    .profile .contentBox {
+        padding: 50px;
+    }
+
+    .profile .imgBox {
+        min-height: 600px;
+    }
+
+    .video {
+        height: 50vh;
+    }
+
+    .video .videoBox video {
+        min-width: 750px;
+    }
+}
+
+/* Responsive hero part */
+@media (max-width: 800px) {
+    .banner .content h3 {
+        font-size: 2rem;
+    }
+
+    .banner .content h1 {
+        font-size: 6rem;
+    }
+
+    .banner .content h5 {
+        font-size: 1.2rem;
+    }
+
+    .banner .content h3,
+    .banner .content h1,
+    .banner .content h5 {
+        line-height: 4rem;
+    }
+
+    .video {
+        height: 45vh;
+    }
+
+    .video .videoBox video {
+        min-width: 580px;
+    }
+}
+
+
+/* Responsive with for smaller size */
+@media (max-width: 630px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 50px;
+    }
+
+    .achievement {
+        padding: 30px;
+    }
+
+    .video {
+        height: 40vh;
+    }
+
+    .video .videoBox video {
+        min-width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner .content h3 {
+        font-size: 1.3rem;
+    }
+
+    .banner .content h1 {
+        font-size: 3.9rem;
+    }
+
+    .banner .content h5 {
+        font-size: 0.9rem;
+    }
+
+    .banner .content h3,
+    .banner .content h1,
+    .banner .content h5 {
+        line-height: 2.8rem;
+    }
+
+    .banner .content {
+        padding-right: 8px;
+    }
+
+    .profile .contentBox {
+        padding: 50px 35px 50px;
+    }
+
+    .profile .contentBox .heading {
+        font-size: 25px;
+    }
+
+    .profile .contentBox p,
+    .profile .contentBox p strong {
+        font-size: 16px;
+        line-height: 1.4rem;
+    }
+
+    .profile .imgBox {
+        min-height: 400px;
+    }
+
+    .video {
+        height: 30vh;
+    }
+
+    .video .videoBox video {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 350px) {
+    .video {
+        height: 23vh;
+    }
+
+    .video .videoBox video {
+        min-width: 200px;
+    }
+}

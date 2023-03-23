@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/join.css">
+    <title>BEULINKEU</title>
+    <link rel="shortcut icon" type="image" href="../assets/1x/logo.png">
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="index.html" class="brand">BEULINKEU</a>
+            <div class="menu-btn"></div>
+            <div class="navbar">
+                <div class="nav-items">
+                    <a class="item" href="index.html">HOME</a>
+                    <a class="item" href="group.html">BLACKPINK</a>
+                    <a class="item" href="#">MEMBERS</a>
+                    <a class="item" href="#">COMMUNITY</a>
+                    <a class="join" href="join.html">Join us</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Meet other Beulinkeu!</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit pariatur culpa
+                        ratione eaque libero.</p>
+                    <div class="info">
+                        <div class="information">
+                            <img src="../assets/location.png" class="icon" alt="footer">
+                            <p>Beulinkeu House - 123, Lorem St, NYC</p>
+                        </div>
+                        <div class="information">
+                            <img src="../assets/email.png" class="icon" alt="footer">
+                            <p>beulinkeu0808@blink.com</p>
+                        </div>
+                        <div class="information">
+                            <img src="../assets/phone-call.png" class="icon" alt="footer">
+                            <p>012-345-6789</p>
+                        </div>
+
+                        <div class="social-media">
+                            <p>Connect with us: </p>
+                            <div class="social-icon">
+                                <a href="#">
+                                    <img src="../assets/facebook1.png" alt="footer" height="35px">
+                                </a>
+                                <a href="#">
+                                    <img src="../assets/twitter-sign.png" alt="footer" height="35px">
+                                </a>
+                                <a href="#">
+                                    <img src="../assets/patreon.png" alt="footer" height="35px">
+                                </a>
+                                <a href="#">
+                                    <img src="../assets/discord.png" alt="footer" height="35px">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="half-circle"></div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form action="join.html" autocomplete="off">
+                        <h3 class="title">Contact us</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input">
+                            <label for="">Username</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input">
+                            <label for="">Who's your bias?</label>
+                            <span>Who's your bias?</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/app.js"></script>
+    </section>
+
+
+
+
+
+    <script type="text/javascript">
+        const menuBtn = document.querySelector(".menu-btn");
+        const navbar = document.querySelector(".navbar");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navbar.classList.toggle("active");
+        });
+    </script>
+
+    <footer>
+        <div class="left">
+            <h1>Credit</h1>
+
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those
+                    Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor
+                    Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>
+                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel
+                    perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+        <div class="right">
+            <h1>Designed by</h1>
+            <div class="name">Nguyen Hien An</div>
+            <div><span>Contact:</span> +8412 3456 789</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
